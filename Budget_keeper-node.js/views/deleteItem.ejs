@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Budget Keeper | Delete Item</title>
+    <link rel="stylesheet" href="/stylesheets/BK-style.css">
+</head>
+<body>
+    <% include partials/header.ejs %>
+    
+    <div class="div-info">
+        <table>
+            <form method="POST" action="deleteItems?_method=DELETE">
+                <tr><td colspan="2"><input type="hidden" name="_method" value="DELETE"></td></tr>
+                <tr><td colspan="2"><input type="hidden" name="item_id" value="<%= item_id %>"></td></tr>
+                <tr><td><label>Item: </label></td><td><%= item %></td></tr>
+                <tr><td><label>Item Type: </label></td><td><%= item_type %></td></tr>
+                <tr><td><label>Cost: </label></td><td><%= cost %></td></tr>
+                <tr><td><label>Cost Type: </label></td><td><%= cost_type %></td></tr>
+                <tr><td><label>Remark: </label></td><td><%= remark %></td></tr>
+                <tr><td><label>Date: </label></td><td><%= date %></td></tr>
+                <tr><td colspan="2"><input type="submit" value="Delete"></td></tr>
+            </form>   
+        </table>
+        <br><br>
+        <label class="links"><a href="./home">Back</a></label>
+    </div>
+</body>
+</html>

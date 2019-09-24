@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Budget Keeper | Home</title>
+  <link rel="stylesheet" href="/stylesheets/BK-style.css">
+</head>
+<body>
+  <% include partials/header.ejs %>
+  <div class="div-info">
+    <div>
+      <table class="table-insert">
+        <form method="POST" action="/insertItems">
+          <tr><td><input type="text" name="item" placeholder="Item"></td><td>
+          <select name="item_type">
+          <option value="empty">--Item Type--</option>
+          <option value="Salaries and wages">Salaries and wages</option>
+          <option value="Utility expenses">Utility expenses</option>
+          <option value="Administration expenses">Administration expenses</option>
+          <option value="Finance costs">Finance costs</option>
+          <option value="Depreciation">Depreciation</option>
+          <option value="Impairment losses">Impairment losses</option>
+          <option value="Food">Food</option>
+          <option value="Others">Others</option>
+          </select></td></tr>
+          <tr><td><input type="text" name="cost" placeholder="Cost"></td>
+          <td><label>Cost Type:</label><br><input type="radio" name="cost_type" value="Income">Income
+          <input type="radio" name="cost_type" value="Expense">Expense</td></tr>
+          <tr><td><textarea name="remark" placeholder="remark"></textarea></td></tr>
+          <tr><td colspan="2"><input type="submit" value="Submit"></td></tr>
+        </form>      
+      </table>
+    </div>
+    <div id="output"></div>
+    <div id="total"></div>
+  </div>
+  <script src="../js/fetch.js"></script>
+  <!-- <script src="../js/total.js"></script> -->
+</body>
+</html>

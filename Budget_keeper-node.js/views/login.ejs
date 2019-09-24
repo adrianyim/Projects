@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Budget Keeper | Login</title>
+    <link rel="stylesheet" href="/stylesheets/BK-style.css">
+</head>
+<body>
+    <div class="div-info">
+        <form method="POST" action="home" id="myForm">
+            <input type="text" name="username" placeholder="Username" required>
+            <!-- ...............NEED TO FIX .............. -->
+            <% if (typeof error == 'undefined') { %>
+                <span><%= locals.error %></span>
+            <% } %>
+            <!-- ...............NEED TO FIX .............. -->
+            <br><br>
+            <input type="password" name="password" placeholder="Password" required>
+            
+            <br><br>
+            <input type="submit" value="Log in">
+        </form>
+        <br><br>
+        <label class="links"><a href="./signUp">Create Account</a></label>
+    </div>
+    <!-- <script src="../js/error.js"></script> -->
+</body>
+</html>

@@ -1,0 +1,107 @@
+body {
+    font-family: sans-serif;
+    margin: 25px;
+    background-color: gray; 
+}
+
+.byui-logo {
+    width: 120px;
+    height: 120px;
+}
+
+.me {
+    width: 500px;
+}
+
+.div-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+.div-assign-content:hover {
+    background-color: white;
+}
+
+.links a {
+    color: black;
+    text-decoration: none;
+}
+
+.links a:hover {
+    background-color: gray;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a.a-header:link, a.a-header:visited {
+    background-color: white;
+    color: black;
+    border: 2px solid gray;
+    text-decoration: none;
+    display: inline-block;
+}
+
+a.a-header:hover {
+    background-color: gray;
+    color: white;
+    text-decoration: none;
+}
+
+.div-content {
+    font-size: 50px;
+    text-align: center;
+}
+
+.div-header {
+    margin-left: 25%;
+    text-align: end;
+    background-color: white;
+}
+
+.div-footer {
+    text-align: center;
+}
+.content-left {
+    margin-right: 25%;
+    background-color: white;
+}
+.content-right {
+    margin-left: 25%;
+    background-color: white;
+}
+
+/* .img-footer {
+    width: 20px;
+    height: 20px;
+} */
+.img-paper-cutting {
+    width: 15%;
+    height: 15%;
+}
+
+table {
+    width: 75%;
+    text-align: center;
+}
+
+.img-hello {
+    margin: 10px;
+    width: 100px;
+    height: 50px;
+}
+
+.table-insert {
+    width: 75%;
+    text-align: center;
+}
+
+tr:hover {
+    background-color:#adadad;
+}
